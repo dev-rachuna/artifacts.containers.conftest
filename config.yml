@@ -1,0 +1,44 @@
+---
+base_image: ubuntu:noble
+
+labels:
+  maintainer: "Maciej Rachuna <rachuna.maciej@gmail.com>"
+  image_source: "https://gitlab.com/pl.rachuna-net/artifacts/containers/conftest"
+
+env:
+  DEBIAN_FRONTEND: noninteractive
+  TF_IN_AUTOMATION: "true"
+  LANG: C.UTF-8
+
+before_build_commands:
+  ## contest
+  - curl -sLo ./conftest.tar.gz https://github.com/open-policy-agent/conftest/releases/download/v0.68.2/conftest_0.68.2_Linux_x86_64.tar.gz
+  - tar xzf conftest.tar.gz
+
+packages:
+  - bash
+  - curl
+  - git
+  - gnupg2
+  - jq
+  - libssl3
+  - openssh-client
+  - ca-certificates
+
+custom_repos: []
+
+extra_commands:
+  - conftest --version
+
+copy:
+  - source: conftest
+    destination: /usr/local/bin/conftest
+
+user:
+  name: nonroot
+  shell: /bin/bash
+  home: /home/nonroot
+  uid: 10000
+
+entrypoint: null
+cmd: "/bin/bash"
