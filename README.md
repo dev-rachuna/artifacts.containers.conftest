@@ -1,24 +1,13 @@
-# <img src=".gitlab/container.png" alt="container" height="20"/> conftest
+# <img src=".gitlab/container.png" alt="container" height="30"/> conftest
+
+::include{file=.gitlab/badges.md}
 
 Obraz kontenerowy z narzędziem [conftest](https://www.openpolicyagent.org/).
 
----
+## Patch Management
 
-## Contributions
-
-Jeśli masz pomysły na ulepszenia, zgłoś problemy, rozwidl repozytorium lub utwórz Merge Request. Wszystkie wkłady są mile widziane!
-[Contributions](CONTRIBUTING.md)
+Zbudowano w dniu: 2026-05-29
 
 ---
 
-## License
-
-[Licencja](LICENSE) oparta na zasadach Creative Commons BY-NC-SA 4.0, dostosowana do potrzeb projektu.
-
----
-
-## Author Information
-
-| ![Maciej Rachuna](https://gitlab.com/uploads/-/system/user/avatar/8161705/avatar.png?width=50) |
-|------------------------------------------------------------------------------------------------|
-| [Maciej Rachuna](https://gitlab.commrachuna)                                                   |
+::include{file=.gitlab/footer.md}
