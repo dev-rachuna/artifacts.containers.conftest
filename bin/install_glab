@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-curl -L https://gitlab.com/gitlab-org/cli/-/releases/v1.101.0/downloads/glab_1.101.0_linux_amd64.deb -o /tmp/glab.deb
-dpkg -i /tmp/glab.deb
-glab version
-rm -f /tmp/glab.deb
