@@ -1,3 +1,9 @@
+## [1.2.1](https://gitlab.com/dev.rachuna/artifacts/containers/conftest/compare/1.2.0...1.2.1) (2026-06-15)
+
+### 🐛 Bug Fixes 🐛
+
+* Patch management 2026-06-15 ([b1f2ef5](https://gitlab.com/dev.rachuna/artifacts/containers/conftest/commit/b1f2ef579847087184344d956433b377b7ca6e2e))
+
 ## [1.2.0](https://gitlab.com/dev.rachuna/artifacts/containers/conftest/compare/1.1.0...1.2.0) (2026-06-05)
 
 ### ✨ Features ✨
